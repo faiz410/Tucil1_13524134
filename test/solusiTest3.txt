@@ -1,0 +1,10 @@
+Selamat datang di program Solusi Papan Queens!
+Masukkan nama file: tes
+
+Membuka file...
+File berhasil dibuka
+
+Membaca file...
+Dimensi: 4 x 4
+Jumlah warna: 3
+Kesalahan: jumlah warna (huruf) tidak sama dengan dimensi papan

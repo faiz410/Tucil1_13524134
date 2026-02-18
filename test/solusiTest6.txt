@@ -1,0 +1,24 @@
+Selamat datang di program Solusi Papan Queens!
+Masukkan nama file: tes3
+
+Membuka file...
+File berhasil dibuka
+
+Membaca file...
+Dimensi: 5 x 5
+Jumlah warna: 5
+
+Papan awal:
+A B B B B
+C C C C C
+C C C C C
+D D E E E
+D D D E E
+
+Mencari solusi...
+Pencarian ke-1 (dari warna awal)
+Pencarian ke-2 (dari warna awal)
+Pencarian solusi selesai
+Waktu pencarian: 0.00 ms
+Jumlah iterasi: 3
+Tidak ditemukan solusi

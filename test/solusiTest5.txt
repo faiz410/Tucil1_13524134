@@ -1,0 +1,39 @@
+Selamat datang di program Solusi Papan Queens!
+Masukkan nama file: tes2
+
+Membuka file...
+File berhasil dibuka
+
+Membaca file...
+Dimensi: 9 x 9
+Jumlah warna: 9
+
+Papan awal:
+A A A F F G G G F
+B A F F F F G F F
+B A E E E F G F F
+C C C E F F F F F
+D C D E H H I I I
+D C D D D D D I D
+D D D H H H D I D
+D D D D H D D D D
+D D D D H D D D D
+
+Mencari solusi...
+Pencarian ke-1 (dari warna awal)
+Pencarian ke-2 (dari warna awal)
+Pencarian ke-3 (dari warna awal)
+Pencarian solusi selesai
+Waktu pencarian: 0.00 ms
+Jumlah iterasi: 179
+
+Solusi ditemukan (Huruf kecil adalah Ratu):
+A A a F F G G G F
+B A F F F F g F F
+b A E E E F G F F
+C C C E F f F F F
+D C D e H H I I I
+D c D D D D D I D
+D D D H H H D i D
+D D D D h D D D D
+D D D D H D D D d

@@ -1,99 +1,21 @@
-# QueensBoardSolver
-Program C untuk solve permainan papan 
+# Queens Board Solver
 
-Informasi untuk file .txt input:
-1. Warna direpresentasikan sebagai huruf kapital alphabet 
-2. Warna, baris, dan kolom petak berjumlah sama
-3. Spasi dan baris kosong akan diabaikan (jika ada). Hal ini memungkinkan petak dengan elemen berjarak.
+Queens Board Solver adalah program bahasa C yang dapat mencari solusi dari permainan Papan Queens LinkedIn dengan pendekatan algoritma Brute Froce. Program ini akan meminta file .txt berisi papan game dengan format susunan seperti yang disebutkan setelah bagian ini. Setelah file tersebut telah dibaca, program akan mencari solusi yang valid dengan algorima Brute Force dan menampilkan hasilnya. Sebelum melakukan pencarian solusi, program akan melakukan validasi papan input, seperti pengecekan dimensi dan karakter yang digunakan.
 
-Pesan error mungkin akan muncul jika ketentuan di atas ada yang tidak terpenuhi
+## Format File .txt Input
+1. Isi file adalah kumpulan **huruf alfabet kapital** yang disusun dalam bentuk n buah baris berisi n buah huruf sehingga membentuk matriks persegi berukuran n. Warna petak yang berbeda ditandai dengan jenis huruf yang berbeda.
+2. Jarak antar elemen dapat diterapkan dengan menggunakan **spasi** antar elemen dalam satu baris, atau menggunakan **baris baru kosong** di antara dua baris. 
+3. Jenis huruf (warna petak), baris, dan kolom memiliki **jumlah yang sama**
+4. **Warna petak/huruf yang sama** sebaiknya **bertetangga satu sama lain** (dalam matriks), tetapi jika ada yang terpisah, program akan tetap menanganinya sebagai satu warna yang sama.
 
-Cara Jalankan Program:
-1. Buka repositori di vscode lokal
-2. Pindahkan file papan (.txt) ke folder src
-3. Jalankan program dengan tombol 'Mulai'
-4. Masukkan nama file saat diminta program
-5. Selesai
+## Cara Menjalankan Program
 
-Langkah Pencarian Solusi Program dengan Algoritma Brute Force (Maybe):
-1. Pilih warna pertama (paling kiri atas matriks papan)
-2. Pilih posisi ratu di posisi pertama warna (paling kiri atas)
-3. Jika posisi ratu valid (tidak ada ratu di baris dan kolom yang sama serta di dekatnya), letakkan ratu di posisi tersebut
-4. Jika tidak valid, pilih ratu di posisi kedua warna dan seterusnya sampai valid.
-5. Jika tidak valid juga sampai akhir pencarian, warna sebelumnya akan dipilih untuk dicari kembali ratunya (Posisi ratu yang dipilih akan berbeda dari sebelumnya)
-6. Jika dipilih warna pertama (dari awal atau hasil backtracking) dan tidak valid juga, papan tidak memiliki solusi
-7. jika posisi ratu valid (poin 3 atau setelah backtracking), warna berikutnya akan dipilih untuk dicari posisi ratu
-8. Jika posisi ratu valid sampai warna terkahir, papan akan memiliki solusi
+1.  Buka repositori di VS Code lokal
+2.  Pindahkan file-file papan (.txt) yang telah dibuat ke folder src
+3.  Jalankan program dengan menekan tombol 'Mulai' di panel kanan atas. Jika menjalankan program menggunakan file executable di folder bin, pindahkan/salin file-file papan tadi ke folder tersebut sebelum memulai
+4.  Masukkan nama file yang diinginkan saat diminta program
+5.  Program akan mulai memproses file papan dan mencari solusinya
 
-Contoh File Test dan Keluaran Program:  
-Input:  
-A A B B  
-C C D D  
-E E F F  
-Output:  
-Kesalahan: dimensi papan tidak persegi  
-   
-Input:  
-A A A A  
-B B B B  
-A A A A  
-B B C C  
-Output:  
-Kesalahan: jumlah warna tidak sama dengan dimensi papan  
-  
-Input:  
-A A A B B C C D D E  
-A A B B C C D D E E  
-F F G G H H I I J J  
-F F G G H H I I J J 
-A B C D E F G H I J  
-J I H G F E D C B A  
-A A A A A B B B B B  
-C C C C C D D D D D  
-E E E E E F F F F F  
-G G G G G H H H H H  
-Output (Huruf kecil adalah ratu):  
-a A A B B C C D D E  
-A A B B c C D D E E  
-F f G G H H I I J J  
-F F G G H H i I J J  
-A B C D E F G H I j  
-J I H g F E D C B A  
-A A A A A b B B B B  
-C C C C C D D d D D  
-E E e E E F F F F F  
-G G G G G H H H h H  
-  
-Input:  
-A A A B B  
-A A B B B  
-C C D D E  
-C C D E E  
-C D D E E  
-Output:  
-a A A B B  
-A A B b B  
-C c D D E  
-C C D E e  
-C D d E E  
-  
-Input:  
-A A A A A A A A A A A A B  
-B B B B B B B B B B B B C  
-C C C C C C C C C C C C D  
-D D D D D D D D D D D D E  
-E E E E E E E E E E E E F  
-F F F F F F F F F F F F G  
-G G G G G G G G G G G G H  
-H H H H H H H H H H H H I  
-I I I I I I I I I I I I J  
-J J J J J J J J J J J J K  
-K K K K K K K K K K K K L  
-L L L L L L L L L L L L M  
-M M M M M M M M M M M M A  
-Output:  
-Waktu pencarian: 249370.00 ms  
-Jumlah iterasi: 695002157  
-Tidak ditemukan solusi  
-  
-Program by Salman Faiz Assidqi (13524134)
+## Pembuat Program
+
+Program ini dibuat oleh Salman Faiz Assidqi (NIM 13524134)

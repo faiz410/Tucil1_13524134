@@ -1,0 +1,10 @@
+Selamat datang di program Solusi Papan Queens!
+Masukkan nama file: tes1
+
+Membuka file...
+File berhasil dibuka
+
+Membaca file...
+Dimensi: 0 x 0
+Jumlah warna: 0
+File kosong

@@ -1,0 +1,10 @@
+Selamat datang di program Solusi Papan Queens!
+Masukkan nama file: tes1
+
+Membuka file...
+File berhasil dibuka
+
+Membaca file...
+Dimensi: 3 x 5
+Jumlah warna: 4
+Kesalahan: dimensi papan tidak persegi
